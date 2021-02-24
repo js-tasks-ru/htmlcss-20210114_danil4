@@ -3,10 +3,36 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
     </head>
-    <body>
+    <body style="display: flex; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
+        <svg style="display: none;">
+            <defs>
+                <symbol id="cross" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.707 5.293a1 1 0 010 1.414l-12 12a1 1 0 01-1.414-1.414l12-12a1 1 0 011.414 0z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0l12 12a1 1 0 01-1.414 1.414l-12-12a1 1 0 010-1.414z" fill="currentColor"/></symbol>
+            </defs>
+        </svg>
+
+        <button id="modal-open" class="btn btn--primary">
+            Open modal
+        </button>
+
+        <div id="modal" class="modal">
+        <div class="modal__content">
+            <h2 class="modal__title">Modal title</h2>
+
+             <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum possimus quasi odit voluptate delectus nesciunt animi, harum consequatur id doloribus sunt, accusamus ipsam optio? Error mollitia adipisci ratione eos doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellat labore autem error, praesentium similique inventore saepe cum. Consequuntur, necessitatibus quas placeat provident facilis nihil odio quae nobis aspernatur magnam!</p>
+            <div id="modal-close" class="modal__close">
+                <svg>
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </div>
+
+        </div>
+
+        </div>
+
+        <script src="./index.js"></script>
     </body>
-    <script src="./index.js"></script> 
 </html>
