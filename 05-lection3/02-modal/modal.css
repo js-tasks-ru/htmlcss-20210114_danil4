@@ -49,3 +49,8 @@
 .modal__close:hover {
     color: #4263eb;
 }
+
+.modal__close svg {
+    width: 20px;
+    height: 20px;
+}
