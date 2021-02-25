@@ -6,6 +6,44 @@
         <link rel="stylesheet" href="./checkbox.css">
     </head>
     <body>
+        <svg style="display: none;">
+            <defs>
+                <symbol id="checked" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </symbol>
+            </defs>
+        </svg>
 
+        <div class="checkbox-group">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__control">
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href="#checked"></use>
+                    </svg>
+                </div>
+                <span class="checkbox__legend">Default</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" checked class="checkbox__control">
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href="#checked"></use>
+                    </svg>
+                </div>
+                <span class="checkbox__legend">Checked</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" disabled class="checkbox__control">
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href="#checked"></use>
+                    </svg>
+                </div>
+                <span class="checkbox__legend">Disabled</span>
+            </label>
+        </div>
     </body>
 </html>

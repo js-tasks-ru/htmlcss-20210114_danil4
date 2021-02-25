@@ -1,0 +1,66 @@
+.toggler-group .toggler {
+    margin-bottom: 16px;
+}
+
+.toggler-group .toggler:last-child {
+    margin-bottom: 0;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggler__control {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+    margin: 0;
+}
+
+.toggler__control:checked ~ .toggler__state {
+    border: 1px solid #4263EB;
+    background-color: #4263EB;
+    padding-right: 1px;
+    justify-content: flex-end;
+}
+
+.toggler__control:checked ~ .toggler__state .toggler__marker {
+    background-color: #fff;
+}
+
+.toggler__control:disabled ~ .toggler__state {
+    background-color: #DDE2E5;
+}
+
+.toggler__control:disabled ~ .toggler__state .toggler__marker {
+    background-color: #D1D7DB;
+}
+
+.toggler__state {
+    width: 52px;
+    height: 28px;
+    border: 1px solid #DDE2E5;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding-left: 1px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.toggler__marker {
+    width: 24px;
+    height: 24px;
+    background-color: #DDE2E5;
+    border-radius: 50%;
+}
+
+.toggler__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+}
